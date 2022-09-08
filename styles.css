@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightcoral;
+}
+div{
+    text-align: center;
+}
+button{
+    border: 1px solid black;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: all.25s;
+}
+h1, h3{
+    animation: down 1.25s;
+
+}
+@keyframes down{
+    from{
+        transform: translateY(-50px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
