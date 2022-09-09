@@ -1,21 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: lightcoral;
+    background-size: 100% 100%;
+    background: url("https://source.unsplash.com/1920x1080/?nature") center no-repeat;
+    color: white;
 }
 div{
     text-align: center;
 }
 button{
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 15px 20px;
     border-radius: 20px;
     background: transparent;
     cursor: pointer;
     outline: none;
     transition: all.25s;
+    color: white;
 }
 h1, h3{
     animation: down 1.25s;

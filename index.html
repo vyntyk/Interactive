@@ -3,7 +3,8 @@
   <head>
     <meta charset='UTF-8'/>
     <link rel='stylesheet' href='styles.css'/>
-    <title>Интерактив</title>          
+    <title>Интерактив</title> 
+         
   </head>
   <body>
         <div>
@@ -13,23 +14,9 @@
 
             <Button>Сменить фон</Button>
         </div>
-        <script>
-            const name = prompt('Как вас зовут?')
-            document.querySelector('h3').textContent = 'Привет, '  + name
-            document.querySelector('h1').textContent = 'Сейчас ' + new Date().toLocaleTimeString()
-           
-            setInterval(function() {
-                document.querySelector('h1').textContent = 'Сейчас ' + new Date().toLocaleTimeString()
-            },1000);
 
-            const colors = ['indigo','green', 'orange', 'blue']
-            let index = 0
-            document.querySelector('Button').onclick = function(){
+        <script type="text/javascript" src="index.js"></script>
 
-                document.body.style.background = colors[index]
-                index ++
-                if(index>= colors.length) index = 0
-            }
-        </script>
+        
   </body>
 </html>
