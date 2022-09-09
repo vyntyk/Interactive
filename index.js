@@ -1,12 +1,12 @@
-let name;
+let name1;
 if (localStorage.getItem("my-name")) {
-  name = localStorage.getItem("my-name");
+  name1 = localStorage.getItem("my-name");
 } else {
-  name = prompt("Как вас зовут?");
-  localStorage.setItem("my-name", name);
+  name1 = prompt("Как вас зовут?");
+  localStorage.setItem("my-name", name1);
 }
 
-document.querySelector("h3").textContent = "Привет, " + name;
+document.querySelector("h3").textContent = "Привет, " + name1 + "!";
 document.querySelector("h1").textContent =
   "Сейчас " + new Date().toLocaleTimeString();
 
