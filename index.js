@@ -15,11 +15,6 @@ setInterval(function () {
     "Сейчас " + new Date().toLocaleTimeString();
 }, 1000);
 
-//const colors = ["indigo", "green", "orange", "blue"];
-//let index = 0;
 document.querySelector("button").onclick = function () {
   document.body.style.backgroundImage = "url('priroda20.jpeg')";
-  // index++;
-  // if (index >= colors.length) index = 0;
 };
-
