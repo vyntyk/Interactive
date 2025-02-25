@@ -1,38 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-size: 100% 100%;
-    background: url("https://source.unsplash.com/1920x1080/?nature") center no-repeat;
-    color: white;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    margin: 0;
 }
-div{
+
+div {
     text-align: center;
 }
-button{
-    border: 1px solid white;
-    padding: 15px 20px;
-    border-radius: 20px;
-    background: transparent;
-    cursor: pointer;
-    outline: none;
-    transition: all.25s;
-    color: white;
-}
-h1, h3{
-    animation: down 1.25s;
 
+button {
+    padding: 12px;
+    width: 190px;
+    cursor: pointer;
+    background: #799be6;
+    color: black;
+    font-size: large;
+    transition: 0.5s ease;
+    border-radius: 10px;
+    border: none;
 }
-@keyframes down{
-    from{
+
+button:hover {
+    background: transparent;
+    border: 2px solid #799be6;
+    box-shadow: 0 0 10px 0 #799be6 inset, 0 0 10px 4px #799be6;
+}
+
+h1, h3 {
+    animation: down 1.25s;
+}
+
+@keyframes down {
+    from {
         transform: translateY(-50px);
     }
-
-    to{
+    to {
         transform: translateY(0);
     }
 }
